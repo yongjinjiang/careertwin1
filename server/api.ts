@@ -1,8 +1,8 @@
 import type pg from 'pg'
-import { AuthenticationError, bearerToken, supabaseUserLookup, verifyAccessToken, type UserLookup } from './auth'
-import { readServerConfig, type ServerConfig } from './config'
-import { createPool, withOwner } from './db'
-import { readOwnProfile } from './profile'
+import { AuthenticationError, bearerToken, supabaseUserLookup, verifyAccessToken, type UserLookup } from './auth.js'
+import { readServerConfig, type ServerConfig } from './config.js'
+import { createPool, withOwner } from './db.js'
+import { readOwnProfile } from './profile.js'
 
 export interface ApiDependencies {
   config: ServerConfig
